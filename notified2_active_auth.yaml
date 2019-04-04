@@ -1,0 +1,9 @@
+threshold: 1
+keys:
+- key: EOS5oyWtncRVkUKSpeyKU1sXyTfMqSMhLHVcAEjFvygSEs7veaHmd
+  weight: 1
+accounts:
+- permission:
+    actor: dfuseiotests
+    permission: eosio.code
+  weight: 1
