@@ -10,15 +10,12 @@ using eosio::name;
 using eosio::permission_level;
 using std::string;
 
-class [[eosio::contract("tests")]] tests: public eosio::contract {
+class [[eosio::contract("thecardgame")]] thecardgame: public eosio::contract {
     public:
-        tests(name receiver, name code, datastream<const char*> ds)
+        thecardgame(name receiver, name code, datastream<const char*> ds)
         :eosio::contract(receiver, code, ds)
         {}
 
         [[eosio::action]]
-        void cfuinline(const string& data);
-
-        [[eosio::action]]
-        void cfainline(const string& data);
+        void passto(name from, name to, const string& card_id, const string& card_kind);
 };
