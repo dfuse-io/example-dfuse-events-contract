@@ -1,6 +1,6 @@
 #include "thecardgame.hpp"
 
-void thecardgame::passto(
+void thecardgame::move(
     name from,
     name to,
     const string& card_id,

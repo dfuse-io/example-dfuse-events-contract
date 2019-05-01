@@ -17,5 +17,5 @@ class [[eosio::contract("thecardgame")]] thecardgame: public eosio::contract {
         {}
 
         [[eosio::action]]
-        void passto(name from, name to, const string& card_id, const string& card_kind);
+        void move(name from, name to, const string& card_id, const string& card_kind);
 };
